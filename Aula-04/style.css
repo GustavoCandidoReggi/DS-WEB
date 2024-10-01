@@ -1,0 +1,27 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+p{
+    font-family: Verdana;
+    font-size: 20px;
+    color:aqua;
+    text-align: center;
+}
+.minha-div{
+    background-color:blueviolet;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+#minha-div{
+    background-color: blue;
+    color: maroon;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
