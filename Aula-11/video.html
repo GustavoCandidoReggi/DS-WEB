@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        h1{
+            color: rgb(255, 255, 255);
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        body{
+            background-image: url(universe.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .video-centro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu-top{
+            width: 100%;
+            padding: 20px;
+            padding-left: 200px;
+            position: sticky;
+            top: 0;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-top">
+        <img src="instagram_icon.svg">
+        <h1> Nicolas Tesla - O hino da humanidade</h1>
+    </div>
+    <div class="video-centro">
+        <video src="NikolaTesla.mp4" 
+        controls 
+        loop
+        autoplay 
+        width="900px" 
+        muted
+        poster="foto.jpg" >
+            
+        </video>
+    </div>
+</body>
+</html>
