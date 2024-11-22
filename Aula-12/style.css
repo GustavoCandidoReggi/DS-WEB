@@ -1,0 +1,38 @@
+.um{
+    padding: 20px 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+    
+}
+.dois{
+    background-color:brown;
+    width: 600px;
+    height: 300px;
+    border: 10px solid orange;
+    text-align: center;
+}
+.tres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1{
+    color: white;
+}
+.outranav{
+    display: inline-block;
+    width: 200px;
+    background-color: grey;
+}
+a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+img{
+    width: 40px;
+    height: 40px;
+}

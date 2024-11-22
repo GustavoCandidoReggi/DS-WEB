@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <style>
+        .tudo{
+            padding: 20px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: background-color 2s ease, transform 2s ease;
+            margin: 40px;
+            text-align: center;
+            
+            } 
+        .box1:hover {
+            background-color: #2ecc71;
+            transform: scale(1.2);
+            }
+        .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        transition: transform 0.5s;
+        margin: 40px;
+        text-align: center;
+        }
+        .box2:hover {
+            transform: rotate(45deg);
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: transform 0.5s;
+            margin: 40px;
+            text-align: center;
+        }
+        .box3:hover {
+            transform: translate(50px, 50px);
+        }
+            /* Define os passos da animação */
+        @keyframes moverEfeito {0% {
+            transform: translateX(0);
+            background-color: red;
+        }
+        50% {
+            transform: translateX(200px);
+            background-color: yellow;
+        }
+        100% {
+            transform: translateX(0);
+            background-color: lightgreen;
+        }
+        }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 40px;
+            text-align: center;
+        }
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            opacity: 1;
+            transition: opacity 0.5s;
+            margin: 40px;
+            text-align: center;
+        }
+        .box5:hover {
+            opacity: 0.5;
+        }
+        /* Aplica a animação ao elemento */
+        .animado {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: moverEfeito 4s ease-in-out infinite;
+            margin: 40px;
+            text-align: center;
+        }
+        .h1b{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="tudo">
+        <div class="box1">
+            <h2>Figura 1</h2>
+        </div><br><br>
+        <div class="box2">
+            <h2>Figura 2</h2>
+        </div><br><br>
+        <div class="box3">
+            <h2>Figura 3</h2>
+        </div><br><br>
+        <div class="box4">
+            <h2 class="h1b">Figura 4</h2>
+        </div><br><br>
+        <div class="box5">
+            <h2>Figura 5</h2>
+        </div><br><br>
+        <div class="animado">
+            <h2>Figura 6</h2>
+        </div><br><br>
+    </div>
+</html>
