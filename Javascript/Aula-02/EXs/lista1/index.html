@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <style>
+        div#area{
+        background: white;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1>lista 1</h1>
+    <br><br><br>
+
+    <h3>Ex 1</h3>
+
+    <br><br><br>
+    
     <p>Digite seu nome: </p>
     <input type="text" id="name">
     <br>
@@ -15,9 +31,56 @@
 
     <p id="bemv">Seja bem vindo(a)!</p>
     <br><br><br><br>
+    
+    <h3>Ex 2</h3>
+    
+    <br><br><br>
 
     <p>Digite um numero: </p>
-    <input type="number" id="par">
+    <input type="number" id="num">
+    <br><br>
+    
+    <button onclick="pa()">Calcular</button>
+
+    <p id="resul">Resultado: </p>
+
+    <br><br><br>
+    
+    <h3>Ex 3</h3>
+
+    <p>Coloque um texto: </p>
+    <input type="text" id="texto">
+    <br><br>
+    <button onclick="convert()">Converter</button>
+    <br><br>
+    <p id="convertido"></p>
+
+    <br><br><br>
+
+    <h3>Ex 4</h3>
+
+    <p>Digite o numero: </p>
+    <input type="number" id="convert">
+    <br><br>
+    <p>Porcentagem de acréscimo:</p>
+    <input type="number" id="acreci">
+
+    <br><br>
+
+    <button onclick="acre()">Acréscimo</button>
+
+    <p id="comacre"></p>
+
+    <br><br><br>
+
+    <h3>Ex 5</h3>
+    <br><br>
+
+    <div id="area">
+        Click aqui!
+    </div>
+    <button onclick="cor()">Botão mudar cor</button>
     
 </body>
+<script src="script.js"></script>
 </html>

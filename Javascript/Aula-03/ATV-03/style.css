@@ -1,0 +1,61 @@
+.princi{
+
+    background:#F3F3F3;
+    margin:auto;
+    width: 50%;
+    max-width:400px;
+    padding:30px;
+    border:1px solid rgba(0,0,0,0.2);
+    border-bottom:5px solid rgba(0, 124, 255);
+    border-radius:15px;
+  
+}
+
+.princi p {
+
+    text-align: center;
+    margin-bottom:20px;
+    color:rgba(0,0,0,0.5);
+
+}
+
+.princi input{
+  
+    display:block;
+    width:100%;
+    background:#f3f3f3;
+    border:none;
+    margin:30px 0;
+    padding:10px;
+    border-bottom:1px solid rgba(0,0,0,0.2);
+    outline:none;
+
+}
+.princi input[type="text"]:focus {
+    border-bottom:2px solid rgba(0,0,0,0.9);
+} 
+
+  
+.princi button{
+
+    background:rgba(0, 124, 255);
+    opacity:0.9;
+    border:none;
+    border-radius:30px;
+    color:white;
+    font-size:1em; 
+    cursor:pointer;
+
+}
+/*
+.divcar{
+
+    background:#F3F3F3;
+    margin:auto;
+    width: 50%;
+    max-width:400px;
+    padding:30px;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:15px;
+  
+  }*/
