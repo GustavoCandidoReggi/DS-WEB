@@ -68,3 +68,35 @@ function validarDadosProduto(){
         return false;
     }
 }
+function validarDadosCadastro(){
+    if(formulario.nome.value.length < 2 || formulario.nome.value == ""){
+        formulario.nome.focus();
+        document.getElementById('erro-nome').innerHTML = "Verifique se o nome possui mais do que 2 caracteres";
+        document.getElementById('erro-email').innerHTML = "";
+        document.getElementById('erro-senha').innerHTML = "";
+        return false;
+    }
+    if(formulario.email.value == "" || 
+        formulario.email.value.indexOf('@')==-1 || 
+        formulario.email.value.indexOf('.')==-1){
+        formulario.email.focus();
+        document.getElementById('erro-nome').innerHTML = "";
+        document.getElementById('erro-email').innerHTML = "Preencha o campo email corretamente!";
+        document.getElementById('erro-senha').innerHTML = "";
+        return false;
+    }
+    if(formulario.senha.value.length > 20 ){
+        formulario.senha.focus();
+        document.getElementById('erro-nome').innerHTML = "";
+        document.getElementById('erro-email').innerHTML = "";
+        document.getElementById('erro-senha').innerHTML = "Sua senha possui mais de 20 caracteres"+formulario.senha.value.length;
+        return false;
+    }
+    if(formulario.senha.value.length < 6 ){
+        formulario.senha.focus();
+        document.getElementById('erro-nome').innerHTML = "";
+        document.getElementById('erro-email').innerHTML = "";
+        document.getElementById('erro-senha').innerHTML = "Sua senha tem que possuir pelo menos 6 caracteres";
+        return false;
+    }
+}

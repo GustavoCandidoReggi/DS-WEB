@@ -16,61 +16,81 @@
 </head>
 <body>
 <style>
-    
-        .horizontal{
-            display: flex;
-            padding: 20px;
-            justify-content: center;
-          
-        }
-        .horizontal div{
-         display: flex;
-         width: 30%;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 30px 30px 30px;
-        border-radius: 8px;
-        background: rgba(133, 239, 227, 0.755);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1{
-            text-align: center;
-            font-family: sans-serif;
-        }
-        
+    h1{
+        text-align: center;
+        font-family: calibri;
+    }
+    body {
+    background-color: #f4f4f4;
+}
+.horizontal {
+    margin: 0 auto;
+    width: 500px;
+}
+.horizontal div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: calibri;
+}
+form{
+    width: 100%;
+}
 label {
     display: block;
-    margin-top: 50px;
-    display: flex;
+    margin-top: 10px;
 }
-input {
-    
-    width: 150%;
+input, textarea {
+    width: 100%;
     padding: 8px 0px 8px 0px;
     margin-top: 5px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ccc;
     border-radius: 4px;
-
+  
 }
 input[type=submit] {
-    margin-top: 10px;
-    width: 150%;
-    align-items: center;
+    margin-top: 15px;
+    width: 100%;
     padding: 10px;
     border: none;
-    background-color: #000000;
+    background-color: blue;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-   
+    font-family: calibri;
 }
-p {
-    font-family:Arial;
- }
 input:hover[type=submit] {
-    background-color: blue;
+    background-color: green;
 }
+
+/* Mensagens de erro */
+.erro-input {
+    color: red;
+    font-size: 15px;
+}
+
+/* Tirando estilo de links */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.select{
+    font-family:Arial;
+    font-size: 16px;
+    width: 40%;
+    border-color: blue;
+    
+    
+}
+    
+
+
     </style>
 </head>
 <body>
@@ -92,6 +112,11 @@ input:hover[type=submit] {
                     }
                 ?>
                 <p>Escolha:</p>
+                <select class="select">
+                    <option value="valor1">Administrador</option>
+                    <option value="valor2" selected>CEO</option>
+                    <option value="valor3">Chefe</option>
+</select>
                 
                 <br><br>
                 <input type="submit">  

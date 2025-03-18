@@ -15,6 +15,36 @@
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
+    <style>
+.logout {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial;
+  }
+
+  .cadastro {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial;
+  }
+
+
+
+        </style>
     <div class="menu">
         <ul>
             <li><a href="#" class="meumenu meumenu-active" title="Home">Home</a></li>
@@ -38,7 +68,10 @@
 
     ?>
     <br><br><br>
-    <a href="logout.php"><button>Logout</button></a>
+
+    <a href="logout.php" class=logout ><button>Logout</button></a>
+    <br><br><br>
+    <a href="cadastro.php" class=cadastro ><button>Cadastro</button></a>
     </div>
 </body>
 <script src="script.js"></script>

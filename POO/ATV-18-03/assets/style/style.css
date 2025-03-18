@@ -86,7 +86,10 @@ p {
 input:hover[type=submit] {
     background-color: #5bb9b0;
 }
-
+.erro-input{
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+}
 
 /*Definindo o estilo da tabela de dados do cliente*/
 
@@ -117,7 +120,6 @@ input:hover[type=submit] {
   background-color: #1bc9af;
   color: rgb(0, 0, 0);
 }
-
 p {
     font-family: Verdana;
  }
@@ -163,3 +165,7 @@ p {
       text-decoration: none;
       color: black;
   }
+
+  /*botoes css*/
+
+  
